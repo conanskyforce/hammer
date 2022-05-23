@@ -1,4 +1,3 @@
-import runAutoMetamask  from "./tasks/autoMetamask"
 
 const setColor = (color, size = 2, bg = 'white') => {
   return (...args) => {
@@ -16,7 +15,7 @@ console.black = setColor('black')
 console.white = setColor('white',1.5,'black')
 
 const startWork = () => {
-  runAutoMetamask()
+  console.log(startWork)
 }
 
 startWork()

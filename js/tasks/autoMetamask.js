@@ -1,6 +1,6 @@
 
 function runAutoMetamask() {
-  if (!/chrome-extension\:\/\/nkbihfb/.test(location.href)) return
+  if (!/chrome-extension\:\/\/nkbihfb/.test(location.href)) return console.log('will not run runAutoMetamask...')
   console.log('%crun auto metamask...', 'color:red;font-size:2em; background-color:black')
   setInterval(async () => {
     if (!/chrome-extension\:\/\/nkbihfb/.test(location.href)) return
@@ -23,4 +23,4 @@ function runAutoMetamask() {
   }, 1000)
 }
 
-export default runAutoMetamask
+runAutoMetamask()
